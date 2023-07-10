@@ -524,7 +524,6 @@ main {
 #projects .port-row .port-item .port-img img {
     width: 100%;
     border-radius: 20px;
-
 }
 
 #projects .port-row .port-item .port-img {
@@ -620,6 +619,20 @@ main {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #projects .port-row .port-item:hover .port-info h4 {
+        color: var(--bgColor);
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    #projects .port-row .port-item:hover .port-info h4~p {
+        color: var(--bgColor);
+        font-size: 10px;
+        font-weight: 500;
     }
 }
 
