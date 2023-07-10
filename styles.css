@@ -7,7 +7,7 @@
 
 :root {
     /* --sideBGColor: #040b14; */
-    --sideBGColor: #131316;
+    --sideBGColor: black;
     --themeColor: rgb(19, 162, 191);
     --iconBGColor: #2C2F3F;
     --textColor: #525252;
@@ -496,7 +496,7 @@ main {
 /* project section */
 #projects {
     padding: 50px 30px;
-    background-image: url(images/projectbg.jpg);
+    background-image: url(images/projectbg.webp);
     background-size: cover;
     background-position: fixed;
 }
@@ -625,7 +625,7 @@ main {
 @media screen and (max-width:500px) {
     #projects .port-row .port-item:hover .port-info h4 {
         color: var(--bgColor);
-        font-size: 15px;
+        font-size: 10px;
         font-weight: 500;
     }
 
@@ -633,6 +633,17 @@ main {
         color: var(--bgColor);
         font-size: 10px;
         font-weight: 500;
+    }
+
+    #projects .port-row .port-item:hover .port-info a {
+        text-decoration: none;
+        color: var(--themeColor);
+        display: inline-block;
+        font-size: 10px;
+        width: 20px;
+        background-color: var(--bgColor);
+        border-radius: 50px;
+        transition: 0.4s;
     }
 }
 
@@ -707,4 +718,10 @@ main {
     font-size: 15px;
     color: var(--textColor);
     font-weight: 500;
+}
+
+@media screen and (max-width:800px) {
+    #contact .contact-row .contact-left {
+        background-color: transparent;
+    }
 }
