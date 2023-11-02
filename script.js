@@ -1,8 +1,11 @@
 //mobile menubar 
 let menubtn = document.getElementById('Menubtn');
+const matchwidth = window.matchMedia('(max-width:1050px)');
 menubtn.addEventListener('click', function () {
   document.querySelector('body').classList.toggle('mobile-nav-active');
   this.classList.toggle('fa-xmark');
+  if (!matchwidth.matches)
+    document.querySelector('main').classList.toggle('mobile-section-active');
 })
 //typing effect
 let typed = new Typed('.auto-input', {
@@ -13,9 +16,7 @@ let typed = new Typed('.auto-input', {
   loop: true,
 })
 
-//adding smooth scroll
 let navLinks = document.querySelectorAll('nav ul li a');
-//get all sections
 let sections = document.querySelectorAll('section');
 window.addEventListener('scroll', function () {
   const scrollPos = window.scrollY

@@ -14,9 +14,21 @@
     --bgColor: #F7F7F7;
 }
 
+body {
+    -ms-overflow-style: none;
+    /*hide scrollbar for IE and Edge */
+    scrollbar-width: none;
+    /* hide scroll bar for Firefox */
+    background-color: black;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
 header {
     height: 100vh;
-    width: 300px;
+    width: 43vh;
     padding: 15px 30px;
     background-color: var(--sideBGColor);
     overflow-y: auto;
@@ -26,34 +38,6 @@ header {
     bottom: 0;
     transition: 0.4s;
     z-index: 99;
-}
-
-header .profile {
-    text-align: center;
-    margin: 10px 0;
-    margin-top: 100px;
-}
-
-header.profile img {
-    width: 150px;
-    border-radius: 50%;
-    border: 10px solid var(--iconBGColor);
-}
-
-header .profile h1 {
-    color: #fff;
-    font-weight: 1000;
-    animation: glow 1.2s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-    from {
-        text-shadow: 0 0 5px #181818, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #00e2e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
-    }
-
-    to {
-        text-shadow: 0 0 10px #fffafa, 0 0 20px #211f1f, 0 0 30px #064a39, 0 0 40px #489aec, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
-    }
 }
 
 header p {
@@ -148,9 +132,10 @@ header nav ul li a.active i {
 }
 
 /* Mobile view media query */
-@media only screen and (max-width:1050px) {
+@media only screen and (max-width:3300px) {
     header {
         left: -400px;
+        transition: 0.5s;
     }
 
     #Menubtn {
@@ -163,13 +148,17 @@ header nav ul li a.active i {
     background-color: var(--sideBGColor);
 }
 
+.mobile-section-active {
+    margin-left: 300px;
+}
+
 main {
     margin-left: 300px;
     background-color: var(--bgColor);
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
-@media only screen and (max-width:1050px) {
+@media only screen and (max-width:3300px) {
     main {
         margin-left: 0;
     }
@@ -249,7 +238,7 @@ main {
 
 #about {
     padding: 70px 30px;
-    background-image: url(images/aboutbg.jpg);
+    background-color: black;
     background-size: cover;
     position: relative;
 }
@@ -410,12 +399,10 @@ main {
     border-radius: 20px;
     color: whitesmoke;
     box-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 82px rgb(0, 136, 255),
-        0 0 92px rgb(0, 208, 255),
-        0 0 151px rgb(0, 106, 255);
+
+        0 0 20px rgb(0, 136, 255),
+        0 0 20px rgb(0, 208, 255),
+        0 0 20px rgb(0, 106, 255);
 }
 
 /* resume style */
@@ -500,6 +487,15 @@ main {
     background-size: cover;
     background-position: fixed;
     position: relative;
+    -ms-overflow-style: none;
+    /*hide scrollbar for IE and Edge */
+    scrollbar-width: none;
+    /* hide scroll bar for Firefox */
+    background-color: black;
+}
+
+#projects::-webkit-scrollbar {
+    display: none;
 }
 
 #projects .port-row {
@@ -516,6 +512,7 @@ main {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     padding-bottom: 10px;
+    margin-top: 20px;
 }
 
 #projects .port-row .port-item:last-child {
@@ -531,8 +528,17 @@ main {
     border-radius: 20px;
 }
 
+@media screen and (max-width:1050px) {
+    #projects .port-img>img {
+        float: left;
+        width: 10rem;
+        height: 10rem;
+        object-fit: cover;
+        border-radius: 20px;
+    }
 
 
+}
 
 /* #projects .port-row .port-item .port-img4 {
     height: 50%;
