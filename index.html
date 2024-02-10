@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css">
     <title>Portfolio</title>
 </head>
 
@@ -15,7 +16,6 @@
             <ul class="container">
                 <li><a href="#" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
                 <li><a href="#about"><i class="fa-solid fa-user"></i> About Me</a></li>
-                <li><a href="#resume"><i class="fa-solid fa-briefcase"></i> Resume</a></li>
                 <li><a href="#projects"><i class="fa-solid fa-server"></i> Projects</a></li>
                 <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
             </ul>
@@ -32,145 +32,156 @@
         </section>
         <!-- about me -->
         <section id="about">
-            <h1 class="sub-heading">About Me</h1>
-            <div class="divider"></div>
-            <p>Hello, I'm Brijesh Singh, a passionate web developer. I thrive on transforming ideas into functional and
-                visually appealing digital experiences.
-            </p>
-            <div class="about-col">
-                <!-- image col -->
-                <!-- <div class="img-col">
-                    <img src="images/mainbg.png">
-                </div> -->
-                <div class="container">
-                    <!-- info col -->
-                    <div class="info-col">
-                        <h2>Web & Android Developer</h2>
+            <div class="heading">
+                <h1>About</h1>
+            </div>
 
+            <div class="about-container">
+                <div class="profilepic">
+                    <img src="/images/giphy.gif" alt="display picture">
+                </div>
+                <div class="about-details">
+                    <div class="about-edu">
+                        <div class="College">
+                            <h2>B.Tech</h2>
+                            <div id="college-name""> <span>NSUT Delhi</span></div>
                     </div>
-                    <div class="icon-list-col">
-                        <div class="icon-list">
-                            <ul>
-                                <li><i class="fa-solid fa-angle-right"></i><strong>Age:</strong><span>21</span></li>
-                                <li><i
-                                        class="fa-solid fa-angle-right"></i><strong>Email:</strong><span>brijesh1205singh@gmail.com</span>
-                                </li>
-                                <li><i
-                                        class="fa-solid fa-angle-right"></i><strong>Phone:</strong><span>9389435523</span>
-                                </li>
-                                <li><i class="fa-solid fa-angle-right"></i><strong>city:</strong><span>Delhi</span></li>
-                            </ul>
+
+                    <div class=" School">
+                                <h2>School</h2>
+                                <div id="school-name"> <span>Seven Oaks School Dehradun</span></div>
+                            </div>
+                        </div>
+                        <div class="about-desc"><span>4th year undergrad pursuing B.Tech in Information Technology from
+                                Netaji Subhas University of Technology,
+                                New Delhi. <br>
+                                I'm a Web developer and have worked on various technologies and completed number of
+                                Projects.</span>
+                            <div class="resume-dow"><a href="/assests/Resume.pdf" download="resume.pdf">Resume</a></div>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        <section class="skills section" id="skills">
+            <h2 class="section__title">My Skills</h2>
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Development</h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="fa-brands fa-c"></i>
+                                <div>
+                                    <h3 class="skills__name">C++</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="fa-brands fa-html5"></i>
+                                <div>
+                                    <h3 class="skills__name">HTML/CSS</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="fa-brands fa-react"></i>
+                                <div>
+                                    <h3 class="skills__name">ReactJs</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="fa-brands fa-js"></i>
+                                <div>
+                                    <h3 class="skills__name">Javascript</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="fa-brands fa-node"></i>
+                                <div>
+                                    <h3 class="skills__name">NodeJs</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="fa-solid fa-check-to-slot"></i>
+                                <div>
+                                    <h3 class="skills__name">ExpressJs</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="fa-solid fa-database"></i>
+                                <div>
+                                    <h3 class="skills__name">SQL</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="fa-solid fa-database"></i>
+                                <div>
+                                    <h3 class="skills__name">MongoDB</h3>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class="fa-brands fa-github"></i>
+                                <div>
+                                    <h3 class="skills__name">Git/Github</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="fa-brands fa-docker"></i>
+                                <div>
+                                    <h3 class="skills__name">Docker</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Computer Fundamentals</h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="bx bxs-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">Operating System</h3>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="bx bxs-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">Computer Networks</h3>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="bx bxs-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">OOPS</h3>
+
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="bx bxs-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">Problem Solver</h3>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- skills section -->
-        <section id="skill">
-            <h1 class="sub-heading">Skills</h1>
-            <div class="divider"></div>
-            <p class="sub-para"></p>
-            <div class="skill-row">
-                <!-- //skill 1 -->
-                <div class="skill-box">
-                    <div class="skill-info">
-                        <h2>HTML</h2>
-                        <h2>70%</h2>
-                    </div>
-                    <div class="skill-outer-line">
-                        <div class="skill-inner-line" style="width:70%"></div>
-                    </div>
-                </div>
-                <!-- skill 2 -->
-                <div class="skill-box">
-                    <div class="skill-info">
-                        <h2>CSS</h2>
-                        <h2>50%</h2>
-                    </div>
-                    <div class="skill-outer-line">
-                        <div class="skill-inner-line" style="width:50%"></div>
-                    </div>
-                </div>
-                <!-- skill 3 -->
-                <div class="skill-box">
-                    <div class="skill-info">
-                        <h2>JavaScript</h2>
-                        <h2>60%</h2>
-                    </div>
-                    <div class="skill-outer-line">
-                        <div class="skill-inner-line" style="width:60%"></div>
-                    </div>
-                </div>
-                <!-- skill 4 -->
-                <div class="skill-box">
-                    <div class="skill-info">
-                        <h2>Web Design</h2>
-                        <h2>80%</h2>
-                    </div>
-                    <div class="skill-outer-line">
-                        <div class="skill-inner-line" style="width:80%"></div>
-                    </div>
-                </div>
-                <!-- skill 5 -->
-                <div class="skill-box">
-                    <div class="skill-info">
-                        <h2>Node js</h2>
-                        <h2>40%</h2>
-                    </div>
-                    <div class="skill-outer-line">
-                        <div class="skill-inner-line" style="width:40%"></div>
-                    </div>
-                </div>
-                <!-- skill 6 -->
-                <div class="skill-box">
-                    <div class="skill-info">
-                        <h2>React js</h2>
-                        <h2>40%</h2>
-                    </div>
-                    <div class="skill-outer-line">
-                        <div class="skill-inner-line" style="width:40%"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- resume -->
-        <section id="resume">
-            <h1 class="sub-heading">Resume</h1>
-            <div class="divider"></div>
-            <p class="sub-para">Experienced web developer adept at creating dynamic, user-centric websites and
-                applications. Decent in front-end and back-end technologies, with a focus on delivering visually
-                appealing and functional digital experiences. Strong problem-solving skills and a collaborative approach
-                to projects. Committed to staying current with industry trends and continuously expanding skill set.
 
-            </p>
-            <div class="resume-row">
-                <div class="resume-cols">
-                    <div class="summary">
-                        <div class="info">
-                            <ul>
-                                <li>Dehradun ,Uttrakhand</li>
-                                <li>9389435523</li>
-                                <li>brijesh1205singh@gmail.com</li>
-                            </ul>
-                        </div>
-                        <div class="college">
-                            <h2>Education</h2>
-                            <h3>Student At Netaji Subhash University</h3>
-                            <h3>Btech (IOT)</h3>
-                        </div>
-                        <div class="resume-down">
-                            <a href="docs/Resume.pdf"><i class="fa-solid fa-download">Resume</i>
-                            </a>
-                        </div>
 
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Projects section -->
         <section id="projects">
             <h1 class="sub-heading">Projects</h1>
-            <div class="divider"></div>
+
             <div class="port-row">
                 <!-- port item 1 -->
                 <div class="port-item" id="projectnum">
@@ -298,7 +309,7 @@
         <!-- contact page -->
         <section id="contact">
             <h1 class="sub-heading">Contact</h1>
-            <div class="divider"></div>
+
             <p style="color: aliceblue; font-weight: 800; font-size:30px;">Thank You for visting my Portfolio hope you
                 liked it,for any querries please contact.
             </p>
