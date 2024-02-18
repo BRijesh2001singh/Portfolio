@@ -93,7 +93,7 @@ header nav ul li a.active i {
     font-weight: bolder;
     font-size: small;
     background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(124, 121, 121));
-    -webkit-background-clip: text;
+
     -webkit-text-fill-color: transparent;
 }
 
