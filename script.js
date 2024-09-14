@@ -12,7 +12,7 @@ function loadpage() {
 window.onload = function () {
     setTimeout(function () {
         document.getElementById('loading').style.display = 'none';
-    }, 0);
+    }, 2000);
 }
 loadpage();
 
