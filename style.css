@@ -922,6 +922,7 @@ svg rect {
     line-height: 3;
     font-family: monospace;
     font-size: large;
+    visibility: hidden;
 }
 
 #start {

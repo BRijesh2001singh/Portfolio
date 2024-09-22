@@ -1,3 +1,5 @@
+const loadprocess = document.querySelector(".loader-process");
+const loadspan = loadprocess.querySelectorAll("span");
 window.onload = async function () {
     loadingScreen();
     setTimeout(function () {
@@ -9,8 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     navBar();
 });
 function loadingScreen() {
-    const loadprocess = document.querySelector(".loader-process");
-    const loadspan = loadprocess.querySelectorAll("span");
+
 
     loadprocess.style.visibility = "hidden";
     let delay = 0;
