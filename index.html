@@ -13,41 +13,40 @@
 
 <body>
     <div id="loading" class="loading">
-        <div class="loader loader--style5" title="4">
-            <span>Welcome!</span>
-            <p>Loading Portfolio</p>
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="30px"
-                viewBox="0 0 24 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
-                <rect x="0" y="0" width="4" height="10" fill="#333">
-                    <animateTransform attributeType="xml" attributeName="transform" type="translate"
-                        values="0 0; 0 20; 0 0" begin="0" dur="0.6s" repeatCount="indefinite" />
-                </rect>
-                <rect x="10" y="0" width="4" height="10" fill="#333">
-                    <animateTransform attributeType="xml" attributeName="transform" type="translate"
-                        values="0 0; 0 20; 0 0" begin="0.2s" dur="0.6s" repeatCount="indefinite" />
-                </rect>
-                <rect x="20" y="0" width="4" height="10" fill="#333">
-                    <animateTransform attributeType="xml" attributeName="transform" type="translate"
-                        values="0 0; 0 20; 0 0" begin="0.4s" dur="0.6s" repeatCount="indefinite" />
-                </rect>
-            </svg>
+        <div class="loader-t">
+            <div class="start-loader">
+                <span>welcome@terminal.brijesh/scripts/portfolio : ~</span>
+                <span style="color: aliceblue">./portfolio.sh _</span>
+
+            </div>
+            <div class="loader-process">
+                <span>executing portfolio.sh (Version 1.0.3)</span>
+                <span>fetching projects-content</span>
+                <span>done <i style="color:#AEFE14;">✓</i></span>
+                <span>fetching skils-content..</span>
+                <span>done <i style="color:#AEFE14;">✓</i></span>
+                <span>fetching contact-details..</span>
+                <span>done <i style="color:#AEFE14;">✓</i></span>
+                <span id="start">Initiating
+                    <span>.</span>
+                    <span>.</span>
+                    <span>.</span>
+                </span>
+            </div>
         </div>
-
-
     </div>
     <header>
         <a href="#home" class="logo">Brijesh</a>
         <nav class="navbar">
-            <a href="#home" class="active"> Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
+            <a href="#home" class="nav-link"> Home</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#contact" class="nav-link">Contact</a>
 
         </nav>
     </header>
-    <section class="home" id="home">
+    <section id="home" class="home section">
         <div class="home-img">
             <img src="/project_images/pfbg.jpg" alt="">
         </div>
@@ -69,11 +68,12 @@
         </div>
 
     </section>
-    <section class="projects" id="projects">
+    <section id="projects" class="projects section">
         <h1>Projects</h1>
         <div class="pr-content">
             <div class="pr">
                 <div class="front">
+                    <span>Jumbblitz</span>
                     <img src="project_images/word.png" alt="...">
 
                 </div>
@@ -86,6 +86,7 @@
             </div>
             <div class="pr">
                 <div class="front">
+                    <span>BookStore</span>
                     <img src="project_images/bookstore.jpg" alt="...">
 
                 </div>
@@ -100,6 +101,7 @@
             <div class="pr">
 
                 <div class="front">
+                    <span>Insta-mern-setup</span>
                     <img src="project_images/npm.jpg" alt="...">
 
                 </div>
@@ -113,6 +115,7 @@
             </div>
             <div class="pr">
                 <div class="front">
+                    <span>Mines</span>
                     <img src="project_images/mines.jpg" alt="...">
 
                 </div>
@@ -127,6 +130,7 @@
             </div>
             <div class="pr">
                 <div class="front">
+                    <span>Junk Remover</span>
                     <img src=project_images/cc.png alt="...">
 
                 </div>
@@ -139,6 +143,7 @@
             </div>
             <div class="pr">
                 <div class="front">
+                    <span>Managment System</span>
                     <img src=project_images/school_m.png alt="...">
 
                 </div>
@@ -151,6 +156,7 @@
             </div>
             <div class="pr">
                 <div class="front">
+                    <span>WebDev.io</span>
                     <img src=project_images/webdev.webp alt="...">
 
                 </div>
@@ -163,6 +169,7 @@
             </div>
             <div class="pr">
                 <div class="front">
+                    <span>ProductivePro</span>
                     <img src=project_images/pro.jpg alt="...">
                 </div>
                 <div class="back">
@@ -174,6 +181,7 @@
             </div>
             <div class="pr">
                 <div class="front">
+                    <span>Crypto Checker</span>
                     <img src=project_images/crypt.jpg alt="...">
 
                 </div>
@@ -184,48 +192,10 @@
                             class="fa-solid fa-up-right-from-square"></i></a>
                 </div>
             </div>
-            <div class="pr">
-                <div class="front">
-                    <img src=project_images/weatherapp.jpg alt="...">
 
-                </div>
-                <div class="back">
-                    <h4>Weather App</h4>
-                    <p>It can show weather of any searched location</p>
-                    <a href=https://weatherapp-three-liart.vercel.app/ target="_blank"><i
-                            class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="pr">
-                <div class="front">
-                    <img src="project_images/tts.webp" alt="...">
-
-                </div>
-                <div class="back">
-                    <h4>Text ⇌ Speech</h4>
-                    <p>This website can convert text to speech and vice versa</p>
-                    <a href="https://gilded-fudge-31576a.netlify.app/" target="_blank"><i
-                            class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-
-            </div>
-
-            <div class="pr">
-                <div class="front">
-                    <img src="project_images/tictac.png" alt="...">
-
-                </div>
-                <div class="back">
-                    <h4>TIC-TAC GAME</h4>
-                    <p>Simple X and O game in react
-                    </p>
-                    <a href="https://tic-tac-game-ten.vercel.app/" target="_blank"><i
-                            class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
-            </div>
         </div>
     </section>
-    <section class="skills" id="skills">
+    <section id="skills" class="skills section">
         <h1 class="section__title">My Skills</h2>
             <div class="skills_container container grid">
 
@@ -311,7 +281,7 @@
             </div>
 
     </section>
-    <section class="education" id="education">
+    <section id="education" class="education section">
         <div class="heading">
             <h1>About</h1>
         </div>
@@ -339,7 +309,7 @@
 
             </div>
     </section>
-    <section class="contact" id="contact">
+    <section class="contact section" id="contact">
         <h1 class="sub-heading" style="font-size: 3rem;margin-right:10rem;">Contact</h1>
 
         <p style="color: aliceblue; font-weight: 800; font-size:30px;">Thank You for visting my Portfolio hope you
