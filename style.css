@@ -31,7 +31,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: black;
-    z-index: 1000;
+    z-index: 100000;
     font-size: 24px;
 }
 
@@ -54,7 +54,7 @@ header {
     align-items: center;
     position: fixed;
     width: 100%;
-    z-index: 100000;
+    z-index: 100;
     background-color: black;
     height: 10%;
     margin-top: 0%;
@@ -105,7 +105,7 @@ section {
     width: 100vw;
     padding: 5rem 9% 5rem;
     animation: scroll-in linear;
-    animation-timeline: view(600px 0px);
+    animation-timeline: view(800px 0px);
 }
 
 @keyframes scroll-in {
@@ -262,7 +262,7 @@ span {
 }
 
 .line {
-    border: 1px solid #ffffffa7;
+    border: 1px solid #ffffff41;
     width: 60%;
     margin-left: 22%;
     margin-top: 2rem;
@@ -624,6 +624,7 @@ span {
     margin: 0 auto 1em;
     display: inline-block;
     vertical-align: top;
+    z-index: 2000;
 }
 
 /*
@@ -689,6 +690,8 @@ svg rect {
 
     section {
         padding: 3rem 5%;
+        animation: none;
+        animation-timeline: none;
     }
 
     .home {
@@ -756,6 +759,7 @@ svg rect {
 
     .about {
         width: 100%;
+        margin-left: 5%;
     }
 
     .about-tech {
