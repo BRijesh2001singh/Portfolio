@@ -36,11 +36,10 @@ function navBar() {
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
-            if (window.scrollY >= sectionTop - 50 && window.scrollY < sectionTop + sectionHeight - 50) {
+            if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 200) {
                 currentsection = section.getAttribute("id");
             }
         })
-
         navbar.forEach(link => {
             link.classList.remove("active");
             if (link.getAttribute("href") === `#${currentsection}`) {
@@ -49,7 +48,11 @@ function navBar() {
         })
     })
 }
+// adding wave animation
+const images = document.querySelectorAll('.tech-img img');
 
-
-
+images.forEach(image => {
+    const delay = Math.random() * 3;
+    image.style.animationDelay = `${delay}s`;
+})
 
